@@ -28,7 +28,7 @@
 		9F9C520E25E4430A00D1EEAB /* AlbumCollectionViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C520D25E4430A00D1EEAB /* AlbumCollectionViewController+MapView.swift */; };
 		9F9C521325E443AE00D1EEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9C521225E443AE00D1EEAB /* Assets.xcassets */; };
 		9F9C521B25E4485F00D1EEAB /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C521A25E4485F00D1EEAB /* PhotoViewCell.swift */; };
-		9F9C522725E44C8400D1EEAB /* VirtualTourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C522525E44C8400D1EEAB /* VirtualTourist.xcdatamodeld */; };
+		9FD177CE25E6BA0400315932 /* VirtualTourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FD177CC25E6BA0400315932 /* VirtualTourist.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +76,7 @@
 		9F9C520D25E4430A00D1EEAB /* AlbumCollectionViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumCollectionViewController+MapView.swift"; sourceTree = "<group>"; };
 		9F9C521225E443AE00D1EEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Desktop/Virtual-Tourist-master/VirtualTourist/Assets.xcassets"; sourceTree = "<group>"; };
 		9F9C521A25E4485F00D1EEAB /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
-		9F9C522625E44C8400D1EEAB /* VirtualTourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirtualTourist.xcdatamodel; sourceTree = "<group>"; };
+		9FD177CD25E6BA0400315932 /* VirtualTourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirtualTourist.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,7 @@
 		9F9C517425E4238800D1EEAB = {
 			isa = PBXGroup;
 			children = (
+				9FD177CC25E6BA0400315932 /* VirtualTourist.xcdatamodeld */,
 				9F9C517F25E4238800D1EEAB /* VirtualToursit */,
 				9F9C519925E4238E00D1EEAB /* VirtualToursitTests */,
 				9F9C51A425E4238E00D1EEAB /* VirtualToursitUITests */,
@@ -180,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				9F9C51C625E4263A00D1EEAB /* Location.swift */,
-				9F9C522525E44C8400D1EEAB /* VirtualTourist.xcdatamodeld */,
 				9F9C51E525E42DAE00D1EEAB /* DataController.swift */,
 				9F9C51EA25E42EBF00D1EEAB /* AnnotationPin.swift */,
 				9F9C51F525E42F6700D1EEAB /* PhotoStruct.swift */,
@@ -342,7 +342,6 @@
 			files = (
 				9F9C51B925E424F500D1EEAB /* FlickerClient.swift in Sources */,
 				9F9C520925E43E1B00D1EEAB /* AlbumCollectionViewController+FetchResults.swift in Sources */,
-				9F9C522725E44C8400D1EEAB /* VirtualTourist.xcdatamodeld in Sources */,
 				9F9C51FF25E436D500D1EEAB /* AlbumCollectionViewController.swift in Sources */,
 				9F9C521B25E4485F00D1EEAB /* PhotoViewCell.swift in Sources */,
 				9F9C51D825E42C0800D1EEAB /* Photo+Extension.swift in Sources */,
@@ -356,6 +355,7 @@
 				9F9C518325E4238800D1EEAB /* SceneDelegate.swift in Sources */,
 				9F9C51D025E42BD800D1EEAB /* Pin+Extension.swift in Sources */,
 				9F9C51C125E425A100D1EEAB /* FlickerRsponse.swift in Sources */,
+				9FD177CE25E6BA0400315932 /* VirtualTourist.xcdatamodeld in Sources */,
 				9F9C51C725E4263A00D1EEAB /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,14 +691,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9F9C522525E44C8400D1EEAB /* VirtualTourist.xcdatamodeld */ = {
+		9FD177CC25E6BA0400315932 /* VirtualTourist.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				9F9C522625E44C8400D1EEAB /* VirtualTourist.xcdatamodel */,
+				9FD177CD25E6BA0400315932 /* VirtualTourist.xcdatamodel */,
 			);
-			currentVersion = 9F9C522625E44C8400D1EEAB /* VirtualTourist.xcdatamodel */;
-			name = VirtualTourist.xcdatamodeld;
-			path = "../../../../Desktop/Virtual-Tourist-master/VirtualTourist/Model/VirtualTourist.xcdatamodeld";
+			currentVersion = 9FD177CD25E6BA0400315932 /* VirtualTourist.xcdatamodel */;
+			path = VirtualTourist.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
