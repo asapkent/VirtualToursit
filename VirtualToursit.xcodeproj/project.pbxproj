@@ -26,9 +26,9 @@
 		9F9C520425E43D8900D1EEAB /* AlbumCollectionViewController+collectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C520325E43D8900D1EEAB /* AlbumCollectionViewController+collectionView.swift */; };
 		9F9C520925E43E1B00D1EEAB /* AlbumCollectionViewController+FetchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C520825E43E1B00D1EEAB /* AlbumCollectionViewController+FetchResults.swift */; };
 		9F9C520E25E4430A00D1EEAB /* AlbumCollectionViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C520D25E4430A00D1EEAB /* AlbumCollectionViewController+MapView.swift */; };
-		9F9C521325E443AE00D1EEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9C521225E443AE00D1EEAB /* Assets.xcassets */; };
 		9F9C521B25E4485F00D1EEAB /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9C521A25E4485F00D1EEAB /* PhotoViewCell.swift */; };
 		9FD177CE25E6BA0400315932 /* VirtualTourist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FD177CC25E6BA0400315932 /* VirtualTourist.xcdatamodeld */; };
+		9FD1782825E872E600315932 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1782725E872E600315932 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,9 +74,9 @@
 		9F9C520325E43D8900D1EEAB /* AlbumCollectionViewController+collectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumCollectionViewController+collectionView.swift"; sourceTree = "<group>"; };
 		9F9C520825E43E1B00D1EEAB /* AlbumCollectionViewController+FetchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumCollectionViewController+FetchResults.swift"; sourceTree = "<group>"; };
 		9F9C520D25E4430A00D1EEAB /* AlbumCollectionViewController+MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumCollectionViewController+MapView.swift"; sourceTree = "<group>"; };
-		9F9C521225E443AE00D1EEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Desktop/Virtual-Tourist-master/VirtualTourist/Assets.xcassets"; sourceTree = "<group>"; };
 		9F9C521A25E4485F00D1EEAB /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
 		9FD177CD25E6BA0400315932 /* VirtualTourist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VirtualTourist.xcdatamodel; sourceTree = "<group>"; };
+		9FD1782725E872E600315932 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				9FD177CC25E6BA0400315932 /* VirtualTourist.xcdatamodeld */,
+				9FD1782725E872E600315932 /* Media.xcassets */,
 				9F9C517F25E4238800D1EEAB /* VirtualToursit */,
 				9F9C519925E4238E00D1EEAB /* VirtualToursitTests */,
 				9F9C51A425E4238E00D1EEAB /* VirtualToursitUITests */,
@@ -135,7 +136,6 @@
 				9F9C51B625E4249100D1EEAB /* StoryBoards */,
 				9F9C518025E4238800D1EEAB /* AppDelegate.swift */,
 				9F9C518225E4238800D1EEAB /* SceneDelegate.swift */,
-				9F9C521225E443AE00D1EEAB /* Assets.xcassets */,
 				9F9C519125E4238D00D1EEAB /* Info.plist */,
 			);
 			path = VirtualToursit;
@@ -314,7 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F9C519025E4238D00D1EEAB /* LaunchScreen.storyboard in Resources */,
-				9F9C521325E443AE00D1EEAB /* Assets.xcassets in Resources */,
+				9FD1782825E872E600315932 /* Media.xcassets in Resources */,
 				9F9C518825E4238800D1EEAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
