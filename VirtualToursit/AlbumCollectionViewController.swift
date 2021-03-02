@@ -23,6 +23,8 @@ class AlbumCollectionViewController: UIViewController {
     var fetchedResultsController: NSFetchedResultsController<Photo>!
     var pin: Pin!
     var dataController: DataController!
+    var mapTopInset: CGFloat!
+    var image: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,20 +37,21 @@ class AlbumCollectionViewController: UIViewController {
         
         navTitle.title = pin.locationName ?? "Album"
         setUpCollectionView()
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setUpMapView()
         setupFetchedResultsController()
         downloadPhotoData()
-     
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         fetchedResultsController = nil
     }
+    
+    
     // Setting up fetched results controller
        fileprivate func setupFetchedResultsController() {
            let fetchRequest:NSFetchRequest<Photo> = Photo.fetchRequest()
@@ -75,26 +78,12 @@ class AlbumCollectionViewController: UIViewController {
                fatalError("error: \(error.localizedDescription)")
            }
        }
+    
     func showAlert(title: String, message: String){
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertVC, animated: true, completion: nil)
     }
-    
-    @IBAction func newCollection(_ sender: Any) {
-        guard let imageObject = fetchedResultsController.fetchedObjects else { return }
-        for image in imageObject {
-            dataController.viewContext.delete(image)
-           do {
-               try dataController.viewContext.save()
-           } catch {
-                print("Unable to delete images")
-            }
-        }
-        downloadPhotoData()
-    }
-
-    
     
     func downloadPhotoData() {
         activityIndicator.isHidden = false
@@ -142,12 +131,20 @@ class AlbumCollectionViewController: UIViewController {
 
     
     @IBAction func OnPressedDelete(_ sender: Any) {
-       removeSelectedImages()
+        guard let imageObject = fetchedResultsController.fetchedObjects else { return }
+        for image in imageObject {
+            dataController.viewContext.delete(image)
+           do {
+               try dataController.viewContext.save()
+           } catch {
+                print("Unable to delete images")
+            }
+        }
+        downloadPhotoData()
     }
     
 
     @IBAction func OnPressedDone(_ sender: Any) {
-        
         dismiss(animated: true, completion: nil)
     }
     
