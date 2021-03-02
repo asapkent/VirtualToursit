@@ -143,8 +143,6 @@ class AlbumCollectionViewController: UIViewController {
     
     @IBAction func OnPressedDelete(_ sender: Any) {
        removeSelectedImages()
-        //++++++ check on this later
-      // dismiss(animated: true, completion: nil)
     }
     
 
@@ -180,5 +178,12 @@ class AlbumCollectionViewController: UIViewController {
                    }
                }
            }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let currentPhoto = fetchedResultsController.object(at: indexPath)
+        
+        currentPhoto.imageID = nil
+        fetchedResultsController.managedObjectContext.delete(currentPhoto)
     }
 }
